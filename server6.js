@@ -47,7 +47,7 @@ app.get("/", (req, res) => {
   } else {
     res.send(`
       <h1>
-      ${source ? `Hi ${source} reader` : ""}
+      ${source ? `Hi ${source}` : ""}
       Log in to your bank account:
       </h1>
       <form method='POST' action='/login'>
